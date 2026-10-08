@@ -1,0 +1,74 @@
+plugins {
+    id 'fabric-loom' version '1.17.+'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    maven {
+        name = "FabricMC"
+        url = "https://maven.fabricmc.net/"
+    }
+    // malilib for 1.21.11+ (community maintained fork: https://github.com/sakura-ryoko/malilib)
+    maven {
+        name = "SakuraRyoko"
+        url = "https://masa.dy.fi/maven/sakura-ryoko"
+        content {
+            includeGroup "fi.dy.masa.malilib"
+        }
+    }
+    // transitive dependency of malilib
+    maven {
+        name = "FallenBreath"
+        url = "https://maven.fallenbreath.me/releases"
+        content {
+            includeGroup "me.fallenbreath"
+        }
+    }
+    // Mod Menu (optional at runtime, compile-only)
+    maven {
+        name = "Terraformers"
+        url = "https://maven.terraformersmc.com/releases/"
+        content {
+            includeGroup "com.terraformersmc"
+        }
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modImplementation "fi.dy.masa.malilib:malilib-fabric-${project.minecraft_version}:${project.malilib_version}"
+
+    // Mod Menu integration is optional: only needed to compile the ModMenuApi entrypoint.
+    // (Deliberately compile-only; Mod Menu is not required at runtime.)
+    modCompileOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+    it.options.release = 21
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}

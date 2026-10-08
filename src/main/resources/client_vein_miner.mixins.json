@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.c8l8m.clientveinminer.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientPlayerInteractionManagerAccessor",
+    "ClientPlayerInteractionManagerMixin",
+    "ClientWorldAccessor",
+    "MinecraftClientMixin",
+    "PlayerEntityReachMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "client_vein_miner.gui.title.configs": "Chain Mining Configs - %s",
+  "client_vein_miner.gui.title.general": "General",
+  "client_vein_miner.gui.title.chain_mining": "Chain Mining",
+  "client_vein_miner.gui.title.misc": "Misc",
+  "client_vein_miner.hotkeys.category.generic": "Chain Mining Hotkeys",
+
+  "client_vein_miner.hud.preview": "Chainable: %s blocks",
+  "client_vein_miner.hud.chain": "Remaining: %s blocks (reachable %s)",
+  "client_vein_miner.hud.auto_stop": "Stops in %ss",
+
+  "client_vein_miner.config.name.main_toggle": "Main Toggle",
+  "client_vein_miner.config.comment.main_toggle": "Master switch for the whole mod.",
+
+  "client_vein_miner.config.name.chain_mining": "Chain Mining",
+  "client_vein_miner.config.comment.chain_mining": "Enables the chain mining feature.",
+
+  "client_vein_miner.config.name.max_blocks": "Max Blocks",
+  "client_vein_miner.config.comment.max_blocks": "Maximum number of blocks in a single chain.",
+
+  "client_vein_miner.config.name.match_exact_state": "Match Exact State",
+  "client_vein_miner.config.comment.match_exact_state": "If enabled, only blocks with the exact same block state are chained; \nif disabled, all blocks of the same type are chained (e.g. all log orientations).",
+
+  "client_vein_miner.config.name.ignore_tile_entities": "Ignore Tile Entities",
+  "client_vein_miner.config.comment.ignore_tile_entities": "Skip blocks with a block entity (chests, furnaces, etc.) so their contents are not lost.",
+
+  "client_vein_miner.config.name.mining_progress_threshold": "Mining Progress Threshold",
+  "client_vein_miner.config.comment.mining_progress_threshold": "The chain sends its own stop packet once the break progress reaches this percentage.\n§670 is the lowest value the server accepts.",
+
+  "client_vein_miner.config.name.creative_reach_mode": "Creative Ignore Distance",
+  "client_vein_miner.config.comment.creative_reach_mode": "In single player the reach check is lifted completely.\nIn multiplayer §6via Servux§r the whole area is §ldeleted at once§r.",
+  "client_vein_miner.config.value.creative_reach_mode.off": "Off",
+  "client_vein_miner.config.value.creative_reach_mode.single_player": "Single Player",
+  "client_vein_miner.config.value.creative_reach_mode.all": "All",
+
+  "client_vein_miner.config.name.mining_interval": "Mining Interval",
+  "client_vein_miner.config.comment.mining_interval": "Ticks to wait after finishing a block before starting the next one.",
+
+  "client_vein_miner.config.name.auto_stop_seconds": "Auto Stop Seconds",
+  "client_vein_miner.config.comment.auto_stop_seconds": "Stops the chain after this many seconds without any mining progress. The countdown does not run while the hotkey is held.\n0 = never stop automatically.",
+
+  "client_vein_miner.config.name.reach_distance": "Reach Distance",
+  "client_vein_miner.config.comment.reach_distance": "How far (in blocks) a target may be from the player to count as reachable.\n0 = use the vanilla block interaction range.",
+
+  "client_vein_miner.config.name.require_line_of_sight": "Require Line of Sight",
+  "client_vein_miner.config.comment.require_line_of_sight": "If enabled, a target only counts as reachable when there is a clear line of sight to it.",
+
+  "client_vein_miner.config.name.stop_on_key_release": "Stop On Key Release",
+  "client_vein_miner.config.comment.stop_on_key_release": "If enabled, releasing the hotkey stops the chain.",
+
+  "client_vein_miner.config.name.render_outline": "Render Outline",
+  "client_vein_miner.config.comment.render_outline": "Also draws the border lines on top of the filled target shapes.",
+
+  "client_vein_miner.config.name.show_count": "Show Count",
+  "client_vein_miner.config.comment.show_count": "Shows the block count on screen.",
+
+  "client_vein_miner.config.name.line_width": "Line Width",
+  "client_vein_miner.config.comment.line_width": "Width of the highlight lines.\n§oUsed for both the preview group outline and the optional target borders",
+
+  "client_vein_miner.config.name.highlight_opacity": "Highlight Opacity",
+  "client_vein_miner.config.comment.highlight_opacity": "Opacity (in percent) of the red/green target fills.\n§oThe preview outline is always opaque",
+
+  "client_vein_miner.config.name.preview_color": "Preview Color",
+  "client_vein_miner.config.comment.preview_color": "Color of the group outline drawn while previewing.",
+
+  "client_vein_miner.config.name.reachable_color": "Reachable Color",
+  "client_vein_miner.config.comment.reachable_color": "Color of the chain targets that are currently reachable.",
+
+  "client_vein_miner.config.name.unreachable_color": "Unreachable Color",
+  "client_vein_miner.config.comment.unreachable_color": "Color of the chain targets that are currently not reachable.",
+
+  "client_vein_miner.config.name.block_blacklist": "Block Blacklist",
+  "client_vein_miner.config.comment.block_blacklist": "Block ids that should never be chained.\n(e.g. minecraft:stone)",
+
+  "client_vein_miner.config.name.hotkey_activate": "Activate Hotkey",
+  "client_vein_miner.config.comment.hotkey_activate": "Hold this hotkey while pointing at a block to preview the chain group.",
+
+  "client_vein_miner.config.name.hotkey_force_stop": "Force Stop Key",
+  "client_vein_miner.config.comment.hotkey_force_stop": "Press to stop a running chain immediately.",
+
+  "client_vein_miner.config.name.hotkey_open_config": "Open Config GUI",
+  "client_vein_miner.config.comment.hotkey_open_config": "Opens the config GUI."
+}

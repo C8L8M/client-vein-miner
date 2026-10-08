@@ -1,0 +1,21 @@
+# Gradle / Loom
+.gradle/
+build/
+run/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.ipr
+*.iws
+bin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local scratch: archived older builds, old sources and dev notes.
+# Kept on disk on purpose, but it is not part of the source tree.
+_archive/
+*.log

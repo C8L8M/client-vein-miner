@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "client_vein_miner",
+  "version": "${version}",
+  "name": "Client-Side Vein Miner",
+  "description": "Client-side chain mining. Hold a hotkey while pointing at a block to see the whole connected group outlined in white with a block counter next to the crosshair; mine one of them and the rest are mined one by one at real vanilla mining speed. Reachable targets are green, out of reach ones red, refreshed as you move.",
+  "authors": [
+    "C8L8M"
+  ],
+  "contact": {
+    "homepage": "https://github.com/C8L8M/client-vein-miner",
+    "sources": "https://github.com/C8L8M/client-vein-miner",
+    "issues": "https://github.com/C8L8M/client-vein-miner/issues"
+  },
+  "license": "LGPL-3.0-only",
+  "icon": "assets/client_vein_miner/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.c8l8m.clientveinminer.VeinMinerMod"
+    ],
+    "modmenu": [
+      "com.c8l8m.clientveinminer.compat.ModMenuImpl"
+    ]
+  },
+  "mixins": [
+    "client_vein_miner.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "malilib": ">=0.27.20",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": ">=17.0.1"
+  }
+}

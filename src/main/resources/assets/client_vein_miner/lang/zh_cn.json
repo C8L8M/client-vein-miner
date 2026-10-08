@@ -1,0 +1,83 @@
+{
+  "client_vein_miner.gui.title.configs": "连锁采集 配置界面 - %s",
+  "client_vein_miner.gui.title.general": "通用",
+  "client_vein_miner.gui.title.chain_mining": "连锁采集",
+  "client_vein_miner.gui.title.misc": "杂项",
+  "client_vein_miner.hotkeys.category.generic": "连锁采集 热键",
+
+  "client_vein_miner.hud.preview": "待连锁：%s 块",
+  "client_vein_miner.hud.chain": "剩余：%s 块（可挖 %s）",
+  "client_vein_miner.hud.auto_stop": "%s 秒后停止",
+
+  "client_vein_miner.config.name.main_toggle": "总开关",
+  "client_vein_miner.config.comment.main_toggle": "整个模组的开关",
+
+  "client_vein_miner.config.name.chain_mining": "连锁采集开关",
+  "client_vein_miner.config.comment.chain_mining": "连锁采集功能的开关",
+
+  "client_vein_miner.config.name.max_blocks": "连锁上限",
+  "client_vein_miner.config.comment.max_blocks": "单次连锁最多包含的方块数量",
+
+  "client_vein_miner.config.name.match_exact_state": "精确状态匹配",
+  "client_vein_miner.config.comment.match_exact_state": "开启时仅连锁方块状态完全相同的方块；关闭时连锁所有同类型方块（例如不同朝向的原木）",
+
+  "client_vein_miner.config.name.ignore_tile_entities": "跳过方块实体",
+  "client_vein_miner.config.comment.ignore_tile_entities": "跳过带方块实体的方块（箱子、熔炉等），避免内容物丢失",
+
+  "client_vein_miner.config.name.mining_progress_threshold": "挖掘进度阈值",
+  "client_vein_miner.config.comment.mining_progress_threshold": "破坏进度达到该百分比时，连锁自行发送停止包\n§670 是服务端能接受的最低值",
+
+  "client_vein_miner.config.name.creative_reach_mode": "创造模式无视距离",
+  "client_vein_miner.config.comment.creative_reach_mode": "单人游戏下完全解除触及检查\n多人游戏§6通过servux§r§l一次性删除§r整块区域",
+  "client_vein_miner.config.value.creative_reach_mode.off": "关",
+  "client_vein_miner.config.value.creative_reach_mode.single_player": "仅单人",
+  "client_vein_miner.config.value.creative_reach_mode.all": "全部",
+
+  "client_vein_miner.config.name.mining_interval": "挖掘间隔",
+  "client_vein_miner.config.comment.mining_interval": "挖完一块后、开始挖下一块前等待的游戏刻数",
+
+  "client_vein_miner.config.name.auto_stop_seconds": "自动停止秒数",
+  "client_vein_miner.config.comment.auto_stop_seconds": "一定时间内没有任何挖掘进展就自动停止按住热键时不进行计时\n0 = 不自动中止",
+
+  "client_vein_miner.config.name.reach_distance": "触及距离",
+  "client_vein_miner.config.comment.reach_distance": "目标方块距玩家多远（格）内视为可触及\n0 = 使用原版方块交互距离",
+
+  "client_vein_miner.config.name.require_line_of_sight": "需要视线可达",
+  "client_vein_miner.config.comment.require_line_of_sight": "开启时仅当目标与玩家之间有清晰视线时才视为可触及",
+
+  "client_vein_miner.config.name.stop_on_key_release": "松开热键停止",
+  "client_vein_miner.config.comment.stop_on_key_release": "开启时松开热键即停止连锁",
+
+  "client_vein_miner.config.name.render_outline": "绘制边框",
+  "client_vein_miner.config.comment.render_outline": "在连锁目标的填充形状上再画出边框线",
+
+  "client_vein_miner.config.name.show_count": "显示数量",
+  "client_vein_miner.config.comment.show_count": "在屏幕上显示方块数量",
+
+  "client_vein_miner.config.name.line_width": "线宽",
+  "client_vein_miner.config.comment.line_width": "高亮线框的线宽\n§o预览整体轮廓与可选的目标边框线都使用该值",
+
+  "client_vein_miner.config.name.highlight_opacity": "高亮不透明度",
+  "client_vein_miner.config.comment.highlight_opacity": "红绿目标填充的不透明度（百分比）\n§o预览轮廓始终不透明",
+
+  "client_vein_miner.config.name.preview_color": "预览颜色",
+  "client_vein_miner.config.comment.preview_color": "预览时绘制的整体轮廓颜色",
+
+  "client_vein_miner.config.name.reachable_color": "可触及颜色",
+  "client_vein_miner.config.comment.reachable_color": "当前可触及的连锁目标颜色",
+
+  "client_vein_miner.config.name.unreachable_color": "不可触及颜色",
+  "client_vein_miner.config.comment.unreachable_color": "当前不可触及的连锁目标颜色",
+
+  "client_vein_miner.config.name.block_blacklist": "方块黑名单",
+  "client_vein_miner.config.comment.block_blacklist": "不希望被连锁的方块 id\n（例如 minecraft:stone）",
+
+  "client_vein_miner.config.name.hotkey_activate": "触发热键",
+  "client_vein_miner.config.comment.hotkey_activate": "按住此热键并指向方块可预览连锁群",
+
+  "client_vein_miner.config.name.hotkey_force_stop": "强制停止键",
+  "client_vein_miner.config.comment.hotkey_force_stop": "按下立即停止连锁",
+
+  "client_vein_miner.config.name.hotkey_open_config": "打开配置界面",
+  "client_vein_miner.config.comment.hotkey_open_config": "打开配置界面"
+}
