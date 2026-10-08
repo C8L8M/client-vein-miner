@@ -2,6 +2,36 @@
 
 **Version 0.1** ｜ Minecraft **1.21.11** ｜ Fabric ｜ **client-side** mod
 
+> [!CAUTION]
+> ## ⚠️ Use at your own risk — you are responsible for any server ban
+>
+> **Using this mod can get you kicked, rolled back, wiped or permanently banned, and the author
+> and contributors accept no responsibility or liability for that or for any other consequence of
+> using it.**
+>
+> - This mod **automates block breaking on your client**: it keeps mining block after block on
+>   your behalf. In one mode (*Creative Ignore Distance → All*, when the server runs Servux) it
+>   hands a whole area edit to the server. Even though every block is broken through the **real
+>   vanilla path** (real animation, drops, durability, server validation), most servers consider
+>   automation, macros, "chain mining" mods and client-side helpers to be **cheating**.
+> - **Anti-cheat plugins may flag it.** The burst of block-breaking packets a chain produces can
+>   look like an automated client, and some servers ban for the packet pattern alone, regardless
+>   of how vanilla the individual break is.
+> - **Consequences are yours, not ours**: kicks, mutes, item wipes, world rollbacks, rank or
+>   whitelist removal, permanent account or IP bans, lost progress or in-game purchases — on any
+>   server, including ones where you are staff or a paying player, and including single-player
+>   worlds or SMPs with their own rules.
+> - **Check the rules of every server before you join it with this mod installed.** If the rules
+>   are unclear, or client-side automation / chain mining is not explicitly allowed, **do not use
+>   this mod there**. Being client-side and server-invisible is not permission — "the server did
+>   not detect it" is not the same as "the server allows it".
+> - The mod is provided **as is, without warranty of any kind**, and the author and contributors
+>   are **not liable** for any ban, punishment, item loss, world damage, rollback or other damage
+>   arising from downloading, installing or using it (see [License](#license), LGPL-3.0).
+>
+> **You installed it, you pressed the hotkey, the account is yours. Use it in single player first,
+> and only where automation is allowed.**
+
 Hold a hotkey while pointing at a block and the mod outlines the whole connected group of same-type blocks in white, with a block counter next to the crosshair. Mine any one of them and the rest are mined one by one through the **real vanilla mining path** — real break animation, drops, tool durability, enchantments and server checks. Reachable targets are green, out of reach ones red, refreshed in real time as you move.
 
 - mod id: `client_vein_miner`
